@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -14,10 +14,9 @@ namespace CheeseMVC
         {
             BuildWebHost(args).Run();
         }
-
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .Build();
+            .UseStartup<Startup>()
+            .Build();
     }
 }
